@@ -1,0 +1,113 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    // font-family: Cotham, sans-serif; 
+    font-weight: bold;
+    background-color: $green;
+    letter-spacing: 0.64px;
+    line-height: $globalLineHeight;
+    font-size: $globalFontSize;
+    color: white;
+    @include max-screen-height(600px) {
+        font-size: 13px;
+    }
+}
+
+::selection {
+  background: #cacaca; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #cacaca; /* Gecko Browsers */
+}
+
+html {
+    // @extend .full;
+    // overflow-y: hidden;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#app-container  {
+    
+    // font smoothing
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+    // disable text-selection & text cursor
+    // @include user-select(none);
+    cursor: default;
+
+    position: static;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @extend .full;
+    height: auto;
+}
+
+.top-part {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#info-container {
+    @extend #app-container;
+    position: static;
+    text-transform: uppercase;
+    padding-bottom: $overallMargin;
+
+    .inside-holder {
+        width: 100%;
+        text-align: center;
+        // @include max-screen($MQ_MEDIUM) {
+        //     text-align: left;
+        //     position: static;
+        //     padding: $overallMargin 0 0 ($overallMargin / 2);
+        //     overflow-y: scroll;
+        // }
+    }
+    .info-block {
+        display: inline-table;
+        &, a, li {
+            @include userSelect(text);
+        }
+        text-align: left;
+        margin-top: $overallMargin * 2;
+        @include max-screen($MQ_MEDIUM) {
+            text-align: center;
+        }
+    }
+    .info-block:nth-child(1) {
+        // float: left;
+        // text-align: left;
+        // @include max-screen($MQ_MEDIUM) {
+        //     margin: $overallMargin 0 $overallMargin 0;
+        // }
+    }
+    .info-block:nth-child(2) {
+        padding: 0 8% 0 8%;
+        // text-align: center;
+        // @include max-screen($MQ_MEDIUM) {
+        //     float: left;
+        //     text-align: left;
+        //     margin: $overallMargin 0 $overallMargin 0;
+        // }
+    }
+    .info-block:nth-child(3) {
+        // text-align: right;
+        // float: right;
+        // // margin-right: $overallMargin * 2;
+        // @include max-screen($MQ_MEDIUM) {
+        //     float: left;
+        //     text-align: left;
+        //     margin-right: 0;
+        //     margin: $overallMargin 0 $overallMargin 0;
+        //     padding-bottom: $overallMargin;
+        // }
+    }
+}
+
