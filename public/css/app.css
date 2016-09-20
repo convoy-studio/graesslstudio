@@ -93,11 +93,11 @@ html, body {
   margin: 0;
   font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bold;
-  background-color: #09323B;
+  background-color: #ffffff;
   letter-spacing: 0.64px;
   line-height: 22px;
   font-size: 16px;
-  color: white; }
+  color: #000000; }
   @media screen and (max-height: 600px) {
     html, body {
       font-size: 13px; } }
@@ -115,7 +115,8 @@ html, body {
   /* Gecko Browsers */ }
 
 body {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 #app-container, #info-container {
   -webkit-font-smoothing: antialiased;
@@ -143,6 +144,7 @@ body {
     text-align: left;
     margin-top: 80px; }
     #info-container .info-block, #info-container .info-block a, #info-container .info-block li {
+      color: #000000;
       -o-user-select: text;
       -moz-user-select: text;
       -webkit-user-select: text;
@@ -257,7 +259,7 @@ header {
   text-align: center;
   width: 100%;
   margin-top: 40px; }
-  header p.logo {
+  header h1.logo {
     font-size: 24px;
     padding-bottom: 10px; }
   header.dark {

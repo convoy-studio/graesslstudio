@@ -2,14 +2,14 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    // font-family: Cotham, sans-serif; 
+    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    // font-family: Cotham, sans-serif;
     font-weight: bold;
-    background-color: $green;
+    background-color: $white;
     letter-spacing: 0.64px;
     line-height: $globalLineHeight;
     font-size: $globalFontSize;
-    color: white;
+    color: $black;
     @include max-screen-height(600px) {
         font-size: 13px;
     }
@@ -29,10 +29,11 @@ html {
 
 body {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #app-container  {
-    
+
     // font smoothing
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -73,6 +74,7 @@ body {
     .info-block {
         display: inline-table;
         &, a, li {
+          color: $black;
             @include userSelect(text);
         }
         text-align: left;
@@ -110,4 +112,3 @@ body {
         // }
     }
 }
-

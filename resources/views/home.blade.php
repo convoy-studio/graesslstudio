@@ -1,16 +1,16 @@
 @extends('layout')
 
 @section('content')
-    
-    
+
+
 
     <section id="app-container">
-        
+
         <div class="top-part">
 
             <header>
                 <div class='center-part'>
-                    <p class="logo">GRAESSL STUDIO</p>
+                    <h1 class="logo">GRAESSL STUDIO</h1>
                     <p>PRODUCTION  CASTING  ART BUYING</p>
                 </div>
             </header>
@@ -45,7 +45,7 @@
         <section id='info-container'>
             <div class='inside-holder'>
                 <div class='info-block'>
-                    <h1>CLIENTS:</h1><br>
+                    <h2>CLIENTS:</h2><br>
                     <ul>
                         @foreach ($data['clients'] as $client)
                             <li>
@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <div class='info-block'>
-                    <h1>PHOTOGRAPHERS:</h1><br>
+                    <h2>PHOTOGRAPHERS:</h2><br>
                     <ul>
                         @foreach ($data['photographers'] as $photographer)
                             <li>
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class='info-block'>
-                    <h1>CONTACT:</h1><br>
+                    <h2>CONTACT:</h2><br>
                     {!! $data['address'] !!}
                 </div>
             </div>
