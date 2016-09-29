@@ -3,10 +3,10 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    // font-family: Cotham, sans-serif;
-    font-weight: bold;
+    font-family: Cotham, sans-serif;
+    font-weight: 400;
     background-color: $white;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.5px;
     line-height: $globalLineHeight;
     font-size: $globalFontSize;
     color: $black;
@@ -75,7 +75,16 @@ body {
         display: inline-table;
         &, a, li {
           color: $black;
+          line-height: 22px;
             @include userSelect(text);
+        }
+        a {
+          padding: 3px;
+
+          &:not([href^="mailto"]) {
+            display: block;
+            margin-top: -3px;
+          }
         }
         text-align: left;
         margin-top: $overallMargin * 2;
