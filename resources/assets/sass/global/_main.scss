@@ -6,8 +6,13 @@ header {
 	margin-top: $overallMargin;
 
 	h1.logo {
-		font-size: 24px;
+		font-size: 28px;
+		font-weight: bolder;
 		padding-bottom: 10px;
+
+		& + p {
+			font-size: 12px;
+		}
 	}
 
 	&.dark {
@@ -79,6 +84,17 @@ footer {
 			margin-bottom: 10px;
 			padding-left: $padding;
 			padding-right: $padding;
+			font-size: 9px;
 		}
+	}
+}
+
+#info-container {
+	h2 {
+		font-size: 11px;
+		font-weight: bolder;
+	}
+	.info-block, .info-block a {
+		font-size: 11px;
 	}
 }
