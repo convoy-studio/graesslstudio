@@ -57,7 +57,7 @@ class App {
 	}
 
 	resize() {
-		
+
 		// assign global size values
 		WINDOW.x = window.innerWidth
 		WINDOW.y = window.innerHeight
@@ -186,7 +186,7 @@ class Footer {
 		}else{
 			this.props.el.style.top = WINDOW.y - $(this.props.items[0]).height() - OVERALL_MARGIN + 'px'
 		}
-		
+
 	}
 }
 
@@ -259,7 +259,7 @@ function ResizePositionProportionally(windowW, windowH, contentW, contentH) {
 		left: (windowW >> 1) - (newW >> 1),
 		top: (windowH >> 1) - (newH >> 1)
 	}
-	
+
 	return css
 }
 

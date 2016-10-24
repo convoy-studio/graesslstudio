@@ -74,7 +74,7 @@ body {
         display: inline-table;
         &, a, li {
           color: $black;
-          line-height: 22px;
+          line-height: 18px;
             @include userSelect(text);
         }
         a {

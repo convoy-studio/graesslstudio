@@ -45,7 +45,7 @@
         <section id='info-container'>
             <div class='inside-holder'>
                 <div class='info-block'>
-                    <h2>CLIENTS:</h2><br>
+                    <h2>CLIENTS:</h2>
                     <ul>
                         @foreach ($data['clients'] as $client)
                             <li>
@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <div class='info-block'>
-                    <h2>PHOTOGRAPHERS:</h2><br>
+                    <h2>PHOTOGRAPHERS:</h2>
                     <ul>
                         @foreach ($data['photographers'] as $photographer)
                             <li>
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class='info-block'>
-                    <h2>CONTACT:</h2><br>
+                    <h2>CONTACT:</h2>
                     {!! $data['address'] !!}
                 </div>
             </div>
