@@ -119,8 +119,8 @@ class Slide {
 
 		let innerW = WINDOW.x
 		let innerH = WINDOW.y * .8
-		if(WINDOW.x < MQ_MEDIUM) innerH = WINDOW.y * .6
-		if(WINDOW.y < 720) innerH = WINDOW.y * .5
+		if(WINDOW.x < MQ_MEDIUM) innerH = WINDOW.y * .8
+		if(WINDOW.y < 720) innerH = WINDOW.y * .75
 		let scale = (this.img.originalWidth > this.img.originalHeight) ? (innerW / this.img.originalWidth) * 1 : (innerH / this.img.originalHeight) * 1
 		if(WINDOW.x > MQ_MEDIUM) scale = (innerH / this.img.originalHeight) * 1
 		let width = this.img.originalWidth * scale
