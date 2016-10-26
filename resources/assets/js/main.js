@@ -1,5 +1,5 @@
 
-const OVERALL_MARGIN = 40
+const OVERALL_MARGIN = 10
 const MQ_MEDIUM = 768
 
 let PADDING = (OVERALL_MARGIN / 2)
@@ -118,7 +118,7 @@ class Slide {
 		this.props.el.style.height = WINDOW.y + 'px'
 
 		let innerW = WINDOW.x
-		let innerH = WINDOW.y * .7
+		let innerH = WINDOW.y * .8
 		if(WINDOW.x < MQ_MEDIUM) innerH = WINDOW.y * .6
 		if(WINDOW.y < 720) innerH = WINDOW.y * .5
 		let scale = (this.img.originalWidth > this.img.originalHeight) ? (innerW / this.img.originalWidth) * 1 : (innerH / this.img.originalHeight) * 1

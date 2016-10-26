@@ -23,7 +23,7 @@ elixir(function(mix) {
 
 elixir(function(mix) {
     mix.browserSync({
-        proxy: 'graessl-studio.local.net',
+        proxy: 'dev.graesslstudio.local',
         open: false,
         notify: false
 
