@@ -20,6 +20,7 @@ class App {
 
 		this.props.slides = []
 		let items = $(this.props.appContainer).find('ul#slides-container li').get()
+		console.log(items)
 		items.forEach((item, i) => {
 			let slide = new Slide(item)
 			this.props.slides[i] = slide

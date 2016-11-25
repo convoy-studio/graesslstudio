@@ -16,9 +16,9 @@ class PagesController extends Controller
 	    $data = json_decode($str, true);
 	    $data['total_slideshow_items'] = count($data['slideshow']);
 
-	    shuffle($data['slideshow']);
+	    // shuffle($data['slideshow']);
 
     	return view('home')->with('data', $data);
     }
-	
+
 }
